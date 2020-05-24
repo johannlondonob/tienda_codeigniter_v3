@@ -24,24 +24,6 @@ class Article extends CI_Controller
                         $this->load->view('create-article', $data);
                         $this->load->view('layouts/footer');
                 }
-                /* 
-                $itemName = $this->input->post('itemName');
-                $itemDescription = $this->input->post('itemDescription');
-                $itemValue = $this->input->post('itemValue');
-                $idCategory = $this->input->post('idCategory');
-
-                $article = [
-                        'item_name' => $itemName,
-                        'item_descripion' => $itemDescription,
-                        'item_value' => $itemValue,
-                        'id_category' => $idCategory
-                ];
-
-                $this->ArticleModel->insert($article);
-                $this->load->view('layouts/header');
-                $this->load->view('layouts/navbar');
-                $this->load->view('article');
-                $this->load->view('layouts/footer'); */
         }
 
         public function save()
